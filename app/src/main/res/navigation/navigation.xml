@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation">
+    <fragment
+        android:id="@+id/login"
+        android:label="login Fragment"
+        tools:layout="@layout/loginactivity">
+        <action
+            android:id="@+id/login"
+            app:destination="@id/home" />
+        <action
+            android:id="@+id/linkRegistro"
+            app:destination="@id/register" />
+    </fragment>
+    <fragment
+        android:id="@+id/register"
+        android:label="register Fragment"
+        tools:layout="@layout/registeractivity">
+        <action
+            android:id="@+id/aceptarRegistro"
+            app:destination="@id/profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/home"
+        android:label="Home Fragment"
+        tools:layout="@layout/fragment_home_activity">
+    </fragment>
+    <fragment
+        android:id="@+id/search"
+        android:label="search Fragment"
+        tools:layout="@layout/fragment_search_activity">
+    </fragment>
+    <fragment
+        android:id="@+id/profile"
+        android:label="search Fragment"
+        tools:layout="@layout/fragment_profile_activity">
+    </fragment>
+
+</navigation>
